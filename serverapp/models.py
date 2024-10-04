@@ -6,16 +6,17 @@ import os
 __model = None
 __data_columns = None
 
+#Pedosphere Model 
 def get_predicted_plant_type(soil_temp, soil_ph):
     # Validate inputs
     if not isinstance(soil_temp, (int, float)) or not isinstance(soil_ph, (int, float)):
         return 'Invalid input type. Expected numerical values for soil temperature and pH.'
     
     if soil_temp < 0 or soil_temp > 50:
-        return 'Invalid soil temperature value. It should be between 0 and 50.'
+        return 'Invalid soil temperature value!'
     
     if soil_ph < 0 or soil_ph > 14:
-        return 'Invalid soil pH value. It should be between 0 and 14.'
+        return 'Invalid soil pH value!'
 
     # Prepare the input for the model
     x = np.array([soil_temp, soil_ph]).reshape(1, -1)

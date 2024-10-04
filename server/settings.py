@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'corsheaders',
     
     'serverapp',
+    'serverAppHydroSphere',
 ]
 
 MIDDLEWARE = [

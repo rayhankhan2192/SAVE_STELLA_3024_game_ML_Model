@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     
     'serverapp',
     'serverAppHydroSphere',
+    'serverAppAtmosphere',
 ]
 
 MIDDLEWARE = [

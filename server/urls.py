@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('serverapp.urls')),
     path('api/', include('serverAppHydroSphere.urls')),
+    path('api/', include('serverAppAtmosphere.urls')),
     
 ]
